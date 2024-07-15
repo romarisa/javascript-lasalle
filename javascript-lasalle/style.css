@@ -1,0 +1,27 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+    width: 1024px;
+}
+main {
+    margin: auto;
+    width: 1024px;
+}
+
+header ul {
+    margin: 0%;
+    padding: 0 0 0 3%;
+    list-style-type: none;
+    display: flex;
+    background-color: #000000;
+    padding: 1em, 2em;
+  }
+
+header li {
+    color: white;
+    width: 7em;
+    
+    line-height: 4em;
+    text-align: center;
+    padding: 1em, 2em;
+}
