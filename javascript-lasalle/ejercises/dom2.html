@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <link rel="shortcut icon" href="../img/js-icon.png" type="image/x-icon">
+   
+    <style>
+        body {
+            background-color: rgb(250, 249, 248);
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            margin: auto;
+            width: 800px;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        header, section, footer {
+            padding: 20px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+        }
+        section {
+            border-bottom: 1px solid #ddd;
+        }
+        img {
+            max-height: 200px;
+            height: auto;
+            float: left;
+            margin: 5px 15px 0 0;
+        }
+        footer{
+            text-align: center;
+        }
+        </style>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Website</h1>
+    </header>
+    <main>
+        <ul id="ingredientes">
+            <li class="ingrediente">Harina</li>
+            <li class="ingrediente">Azúcar</li>
+            <li class="ingrediente">Huevos</li>
+            <li class="ingrediente">Mantequilla</li>
+        </ul>
+        
+        <section id="section1">
+            <h2>Section 1</h2>
+            
+            <p class="primero">LEl método addEventlistener, es un escuchador que indica al navegador que este atento a la interacción del usuario.La ventaja es que se escribe totalmente en el JS, sin necesidad de tocar el HTML.Su sintaxis es muy sencilla:<br><br><span class="bold">target.addEventListener('tipo de evento',función_a_lanzar,booleano);</span><br><br>Target, es elelemento que se escucha generalmente se identifica por su ID.
+            Los tipos de evento a escuchar, son los eventos ya conocidos de javascript, http://www.w3schools.com/jsref/dom_obj_event.asp:.<br>Función que se ejecuta cuando se escucha el evento.<br><br>El booleano, es opcional, es un valor que define el orden del flujo de los eventos, cuando hay varios eventos posibles. Si tenemos un botón dentro de un div y dentro del body.</p>
+        </section>
+
+        <section id="section2">
+            <h2>Section 2</h2>
+           
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magni porro minima nisi labore corporis doloremque fuga sed culpa, adipisci maxime at vel iure necessitatibus nam cum. Ut iste impedit illum nemo distinctio, dolorem quae provident, <span class="custom">doloremque qui sequi quis maiores</span> sunt non nam! Enim, doloribus aspernatur asperiores itaque magnam quibusdam dignissimos eum ipsa veritatis corporis minima voluptas voluptatem ut hic mollitia earum consectetur ipsum nobis, autem eligendi obcaecati non aliquam inventore esse. Modi sint repellat alias impedit nemo esse.</p>
+        </section>
+
+        <section id="section3">
+            <h2>Section 2</h2>
+           
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magni porro minima nisi labore corporis doloremque fuga sed culpa, adipisci maxime at vel iure necessitatibus nam cum. Ut iste impedit illum nemo distinctio, dolorem quae provident, <span class="custom">doloremque qui sequi quis maiores</span> sunt non nam! Enim, doloribus aspernatur asperiores itaque magnam quibusdam dignissimos eum ipsa veritatis corporis minima voluptas voluptatem ut hic mollitia earum consectetur ipsum nobis, autem eligendi obcaecati non aliquam inventore esse. Modi sint repellat alias impedit nemo esse.</p>
+        </section>
+
+        <section id="section4">
+            <h2>Section 2</h2>
+           
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magni porro minima nisi labore corporis doloremque fuga sed culpa, adipisci maxime at vel iure necessitatibus nam cum. Ut iste impedit illum nemo distinctio, dolorem quae provident, <span class="custom">doloremque qui sequi quis maiores</span> sunt non nam! Enim, doloribus aspernatur asperiores itaque magnam quibusdam dignissimos eum ipsa veritatis corporis minima voluptas voluptatem ut hic mollitia earum consectetur ipsum nobis, autem eligendi obcaecati non aliquam inventore esse. Modi sint repellat alias impedit nemo esse.</p>
+        </section>
+
+        <section id="section5">
+        <button class="btn1">Cambiar el color</button>
+        </section>
+
+        <section id="section6">
+        <button class="btn2">Otro button</button>
+        </section>
+    
+        <p>Prem F12 per obrir la consola i veure els logs</p>
+        <a href="../apuntes.html">Volver a los apuntes</a>
+
+        <p>Prem F12 per obrir la consola i veure els logs</p>
+        <a href="https://lenguajejs.com/javascript/eventos/addeventlistener/"> recurso tio cara graciosa</a>
+        
+    </main>
+        <footer>
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </footer>
+    <script src="../scripts/dom2.js"></script>
+</body>
+</html>

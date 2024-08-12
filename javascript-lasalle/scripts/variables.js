@@ -45,3 +45,41 @@ b = c; // b tiene valor de c, y c tiene valor de a, que es 1
 
 
 console.log(a, b); //2, 1
+
+//---------------------
+
+const PI = "3.1415"
+radi = 4
+
+console.log("el área del círculo es: " + PI*radi**2);
+
+
+//para hacer a la referencia a un propiedad de circulo, no puedo poner circulo nuevamente porque ya lo estoy difiniendo, pero el this. me sirve para acceder a las propiedades del objeto en el que estoy. En otras palabras, con this. estamos accediendo a una propiedad del mismo objeto
+
+circulo = {
+    radi: 4,
+    area: PI*this.radi**2
+}
+
+console.log(circulo);
+
+console.log(typeof cercle.area, typeof parseFloat(cercle.area));
+
+radiString = radi.toString()
+
+console.log(radiString, typeof radiString);
+console.log(" ");
+
+data = {
+    data0: PI,
+    data1: parseFloat(PI),
+    data2: parseInt(PI),
+    data3: radi,
+    data4: radi.toString()
+}
+
+console.log(data.data0, typeof data.data0);
+console.log(data.data1, typeof data.data1);
+console.log(data.data2, typeof data.data2);
+console.log(data.data3, typeof data.data3);
+console.log(data.data4, typeof data.data4);

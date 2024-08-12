@@ -1,21 +1,25 @@
 
 console.log("%cF%cu%cn%cc%ci%co%cn%cs", "font-weight: bold; color: maroon", "font-weight: bold; color: red","font-weight: bold; color: orange","font-weight: bold; color: yellow","font-weight: bold; color: green","font-weight: bold; color: blue","font-weight: bold; color: purple","font-weight: bold; color: pink");
 
-// función que muestra una string por la consola
+// FUNCIÓN QUE DEVUELVE UNA STRING POR LA CONSOLA
 function saludar() {
-    console.log("hola, clase!");
+    console.log("hola, clase!"); // no sale nada, por eso es que la tengo que llamar con saludar(). By the way, es un verbo, es como "mostrar al usuario" por la consola
 }
 
-saludar()
+saludar() // con esto es que llamo a la función. Cuando llamo(call) a la función, se ejecuta el código que hay dentro de sus corchetes
 
-// función que devuelve una string
+
+// FUNCIÓN QUE DEVUELVE UNA STRING
 function saludo() {
     return "hola, clase!"
 }
 
+saludo() 
 console.log(saludo());
 
-// función con un parámetro que muestra una string por la consola
+// es un sustantivo. Devuelve el usuario. Es importante usar verbo o sustantivo o lo que sea dependiendo lo que la funció hace
+
+// FUNCIÓN CON UNA PARÁMETRO QUE MUESTRA UNA STRING POR LA CONSOLA
 function saludarPersona(nom) {
     console.log(`hola, ${nom}!`);
 }
@@ -24,7 +28,7 @@ saludarPersona("David")
 saludarPersona("Gonzalo")
 saludarPersona("Carlos")
 
-// función con un parámetro que devuelve una string personalizada
+// FUNCIÓN CON UNA PARÁMETRO QUE DEVUELVE UNA STRING PERSONALIZADA
 function saludoPersona(nom) {
     return `hola, ${nom}!`
 }
@@ -33,18 +37,17 @@ console.log(saludoPersona("Alberto"));
 console.log(saludoPersona("Myrella"));
 console.log(saludoPersona("Xavi"));
 
-// función a la que le PASEMOS un DNI y nos lo DEVUELVA ofuscado
+
+
+// EJERCICIO: hacer una función a la que le pasemos un dni y nos lo DEVUELVA ofuscado. (que le pasemos el dni significa que tiene un parámetro)
 function dniOfuscado(dni) {
     return dni.slice(4).padStart(9, "X").slice(0,-2).padEnd(9, "X")
 }
 
 console.log(dniOfuscado("12345678A"));
 
-/* versión arrow
-const dniOfuscado = dni => dni.slice(4).padStart(9, "X").slice(0,-2).padEnd(9, "X")
-*/
 
-// función que ofusca el dni guardado en una variable
+// EJERCICIO: función que ofusca el dni guardado en una variable
 dni = "98765432B"
 
 function ofuscarDni() {
@@ -52,7 +55,6 @@ function ofuscarDni() {
 }
 
 ofuscarDni();
-
 console.log(dni);
 
 /* otras versiones
@@ -63,12 +65,20 @@ function ofuscarDni() {
 }
 
 function ofuscarDni() {
-    // reasignando directamente
-    dni = dni.slice(4).padStart(9, "X").slice(0,-2).padEnd(9, "X")
+    dni = dni.slice(4).padStart(9, "X").slice(0,-2).padEnd(9, "X") // reasignando directamente
 }
 */
 
-// una función a la que LE PASES un array de dos elementos y te DEVUELVA el array invertido
+// no es console.log dentro de la funnción porque no dice que muestre cosas por la consola. Es por el requerimiento técnico del ejercicio.
+// por qué el nombre de la función no es un verbo? porque no hace cosas, si no devuelve cosas: un DNI ofuscado. porque modifica una cosa que yo ya tengo que es mi variable dni.
+
+/* versión arrow
+const dniOfuscado = dni => dni.slice(4).padStart(9, "X").slice(0,-2).padEnd(9, "X")
+*/
+
+
+// EJERCICIO: una función a la que le pases un array de dos elementos y te devuelva el array invertido
+
 gatigos = ["🐱","🐶"]
 
 function arrayInvertit(array) {
@@ -93,7 +103,7 @@ function arrayInvertit(array) {
     let [a, b] = array
     return [b, a]
 }
-
+ 
 function arrayInvertit(array) {
     let a = array[0]
     let b = array[1]
@@ -109,11 +119,16 @@ console.log(arrInv);
 
 console.log(arrInv(["A", "B"]))
 
-// Funciones flecha ----------------------------------------------------
+// FUNCIONES FLECHA ----------------------------------------------------------------
 
 const logRojo = (content) => {
     console.log("%c" + content, "color: red");
 }
+
+/* es lo mismo que poner  
+    function logRojo(content){
+    }
+*/
 
 const logAzul = (content1, content2 = "") => {
     console.log("%c" + content1 + content2, "color: blue");
@@ -225,3 +240,6 @@ setTimeout(() => {
         console.log("");
     }, 1000);
 }, 2000)  // això triga dos segons
+
+
+// la funcion logCustom ejecuta la funcion que yo le pase como segundo parametro, con el primer prarametro como parametro, en este ejemplo el valor de text sera lo que le pase como primer parámetro que aqui es Omar
